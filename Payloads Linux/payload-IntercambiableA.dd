@@ -1,0 +1,17 @@
+REM Title: Payload Intercambaible
+REM Author: Sergio Cabello
+REM Target: Linux
+REM Description: Este Payload comprueva la version de Ubuntu y si corrsponde a la esperada ejecuta el Payload y en caso de que no sea la esperada cambia a otro Payload
+DELAY 2000
+CONTROL ALT t
+DELAY 1000
+STRING cd /media/$USER/CIRCUITPY
+ENTER
+DELAY 500
+STRING temp=$(lsb_release -a | grep Description | awk '{print $3}'); export version=$temp; echo $version
+ENTER
+STRING if [ "$version" == "22.04.2" ]; then echo "Version de Target Correcta Ejecutando payload"; else echo "Version de Target Incorrecta Ejecutando payloadB"; cat payload.dd>payloadA.dd; cat payloadB.dd > payload.dd ; fi
+ENTER
+DELAY 1000
+STRING xdg-open https://www.youtube.com/watch?v=vLn9zVJCu18
+ENTER
