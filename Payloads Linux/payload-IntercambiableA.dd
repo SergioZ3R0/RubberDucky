@@ -1,4 +1,4 @@
-REM Title: Payload Intercambaible
+REM Title: Payload Intercambiable
 REM Author: Sergio Cabello
 REM Target: Linux
 REM Description: Este Payload comprueva la version de Ubuntu y si corrsponde a la esperada ejecuta el Payload y en caso de que no sea la esperada cambia a otro Payload
