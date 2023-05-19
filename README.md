@@ -1,5 +1,5 @@
 # RubberDucky With a Raspberry Pi Pico
-In this Repository, you will find some payloads for Windows And Linux
+In this Repository, you will find some payloads for Windows And Linux.
 To make the basic configuration for a Raspberry Pi Pico:
 1. Copy flash_Nuke on you raspberry
 2. Copy adafruit-circuitpython on your Raspberry
