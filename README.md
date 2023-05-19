@@ -10,9 +10,13 @@ That's all you will need to configure the Raspberry Pi Pico
 
 
 The basic Structure of a payload on Ducky Script
+
 REM to do comments
+
 DELAY to put delay on milliseconds
+
 STRING to put the string you want
+
 ENTER
 
 All the other keys like ALT or CONTROL you will find it on the Keycode.py
