@@ -9,8 +9,7 @@ To make the basic configuration for a Raspberry Pi Pico:
 That's all you will need to configure the Raspberry Pi Pico
 
 
-The basic Structure of a payload on Ducky Script
-
+The basic Structure of a payload on Ducky Script\n
 REM to do comments
 
 DELAY to put delay on milliseconds
