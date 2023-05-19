@@ -14,6 +14,7 @@ The basic Structure of a payload on Ducky Script
 2. DELAY to put delay on milliseconds
 3. STRING to put the string you want
 4. ENTER
+5. GUI to use de windows key
 
 All the other keys like ALT or CONTROL you will find it on the Keycode.py
 
