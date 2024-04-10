@@ -1,5 +1,9 @@
 # RubberDucky With a Raspberry Pi Pico
 
+For HELP
+
+POLKADOT: 15SYbCMVUaL37s5VqGFrRPZYXkejZjVVvCzp3KZ8UcVdvcdH
+
 This repository contains payloads for Windows and Linux using a Raspberry Pi Pico configured as a RubberDucky.
 
 ## Setup
