@@ -1,21 +1,34 @@
 # RubberDucky With a Raspberry Pi Pico
-In this Repository, you will find some payloads for Windows And Linux.
 
-To make the basic configuration for a Raspberry Pi Pico:
-1. Copy flash_Nuke on you raspberry
-2. Copy adafruit-circuitpython on your Raspberry
-3. Copy the code.py and delete de one that has created automatically.
-4. Delete de lib Directory and copy the one on the repository on the Raspberry
-That's all you will need to configure the Raspberry Pi Pico
+This repository contains payloads for Windows and Linux using a Raspberry Pi Pico configured as a RubberDucky.
 
+## Setup
 
-The basic Structure of a payload on Ducky Script
-1. REM to do comments
-2. DELAY to put delay on milliseconds
-3. STRING to put the string you want
-4. ENTER
-5. GUI to use de windows key
+To configure your Raspberry Pi Pico, follow these steps:
 
-All the other keys like ALT or CONTROL you will find it on the Keycode.py
+1. Copy `flash_Nuke` onto your Raspberry Pi Pico.
+2. Copy `adafruit-circuitpython` onto your Raspberry Pi Pico.
+3. Replace the automatically created `code.py` with the one from this repository.
+4. Delete the existing `lib` directory on the Raspberry Pi Pico and replace it with the one from this repository.
 
-REMEMBER, THIS RUBBER DUCKY IS CONFIGURED TO WORK WITH A SPANISH KEYBOARD!
+## Payload Structure
+
+Payloads are written in Ducky Script. Here's the basic structure:
+
+1. `REM` - Used for comments.
+2. `DELAY` - Adds a delay in milliseconds.
+3. `STRING` - Inserts the string you want.
+4. `ENTER` - Simulates pressing the Enter key.
+5. `GUI` - Simulates pressing the Windows key.
+
+Other keys like `ALT` or `CONTROL` can be found in the `Keycode.py` file.
+
+**Note:** This RubberDucky is configured to work with a Spanish keyboard!
+
+## Contributing
+
+Contributions are welcome! Please read the contributing guidelines before making any changes.
+
+## License
+
+This project is licensed under the terms of the MIT license.
