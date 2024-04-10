@@ -27,7 +27,7 @@ Other keys like `ALT` or `CONTROL` can be found in the `Keycode.py` file.
 
 ## Contributing
 
-Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before making any changes.
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING) before making any changes.
 
 ## License
 
