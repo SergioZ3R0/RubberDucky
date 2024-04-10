@@ -1,6 +1,6 @@
 # RubberDucky With a Raspberry Pi Pico
 
-For HELP
+FOR HELP
 
 POLKADOT: 15SYbCMVUaL37s5VqGFrRPZYXkejZjVVvCzp3KZ8UcVdvcdH
 
