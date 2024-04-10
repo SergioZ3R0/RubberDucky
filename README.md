@@ -27,8 +27,8 @@ Other keys like `ALT` or `CONTROL` can be found in the `Keycode.py` file.
 
 ## Contributing
 
-Contributions are welcome! Please read the contributing guidelines before making any changes.
+Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before making any changes.
 
 ## License
 
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the MIT license. See the [LICENSE](LICENSE) file for details.
